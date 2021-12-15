@@ -38,8 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-   
-    
+    'rest_framework.authtoken',
+    'token_auth'
+
+
 ]
 
 MIDDLEWARE = [
@@ -82,11 +84,10 @@ DATABASES = {
         'NAME': "drf",
         "HOST": "localhost",
         "PORT": "3306",
-        "USER" : "django",
-        "PASSWORD":"ashwin" 
+        "USER": "django",
+        "PASSWORD": "ashwin"
     }
 }
-
 
 
 # Password validation
